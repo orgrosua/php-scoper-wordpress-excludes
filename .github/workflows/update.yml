@@ -13,13 +13,13 @@ jobs:
     steps:
     - name: Clone
       uses: actions/checkout@v2
-      
+
     - name: Setup PHP 7.4
       uses: shivammathur/setup-php@v2
       with:
         php-version: '7.4'
         tools: composer
-    
+
     - name: Setup Git
       run: |
         git config --global user.email "calvin@snicco.de"
